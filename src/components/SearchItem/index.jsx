@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import shippingIcon from '../../assets/shipping.png';
+import getFormattedPrice from '../../utils/helpers';
 import './style.scss';
 
 const CustomLink = ({ id, children }) => (
@@ -24,12 +25,7 @@ function SearchItem({ item }) {
       <div className="search-item-right-container">
         <CustomLink id={item.id}>
           <div className="search-item-price">
-            <span>
-              {Number(item.price.amount).toLocaleString('es-AR', {
-                style: 'currency',
-                currency: item.price.currency,
-              })}
-            </span>
+            <span>{getFormattedPrice(item.price)}</span>
             {item.freeShipping && (
               <img
                 className="search-item-shipping-icon"
