@@ -1,0 +1,53 @@
+@import 'src/style/variables';
+
+.search-item {
+  display: flex;
+  margin: 0 $spacing-16;
+  padding: $spacing-16 0;
+  border-bottom: 1px solid $light-gray;
+}
+
+.search-item-image {
+  padding-right: $spacing-16;
+  border-radius: 4px;
+  width: 180px;
+  height: 180px;
+
+  @media (max-width: 450px) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.search-item-shipping-icon {
+  margin-left: 10px;
+}
+
+.search-item-right-container {
+  display: flex;
+  padding: $spacing-16 0;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 550px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.search-item-price {
+  padding-bottom: $spacing-32;
+  font-size: 24px;
+}
+
+.search-item-location {
+  font-size: 14px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 550px) {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: $spacing-16;
+  }
+}

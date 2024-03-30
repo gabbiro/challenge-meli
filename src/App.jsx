@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
+import SearchResults from './components/SearchResults';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<>HOME</>} />
-        <Route path="/items" element={<>SEARCH RESULTS</>} />
+        <Route path="/items" element={<SearchResults />} />
         <Route path="/items/:id" element={<>ITEM DETAIL</>} />
       </Routes>
     </div>

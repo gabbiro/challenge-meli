@@ -27,6 +27,7 @@ module.exports = {
     'prettier/prettier': ['error', {
       singleQuote: true
     }],
+    'react/prop-types': 'off',
     'react-refresh/only-export-components': [
       'warn',
       {
