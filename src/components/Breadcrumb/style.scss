@@ -1,0 +1,13 @@
+@import 'src/style/variables';
+
+.breadcrumb-list {
+  display: flex;
+  align-self: center;
+  width: 80%;
+  padding-bottom: $spacing-16;
+  color: $gray;
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
+}
