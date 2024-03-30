@@ -1,0 +1,10 @@
+@import 'src/style/variables';
+
+.box-container {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  padding: $spacing-16;
+  width: calc(80% - $spacing-32);
+  margin: $spacing-16 auto;
+}
